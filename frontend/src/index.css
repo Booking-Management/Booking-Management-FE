@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-Montserrat;
+}
+:root{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
