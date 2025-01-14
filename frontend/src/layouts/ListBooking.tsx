@@ -34,7 +34,7 @@ const responsive = {
             </div>
         </div>
         
-        <Carousel responsive={responsive} infinite={true} aut oPlay={true} autoPlaySpeed={3000} >
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} removeArrowOnDeviceType={["tablet", "mobile"]} containerClass="carousel-container">
             <div className='h-64 lg:h-80 p-2 rounded-lg relative flex flex-col justify-center items-center mx-4 cursor-pointer hover:bg-slate-300 ease-out duration-300'>
                 <div>
                     <img src={logo} alt="Banner" className='min-w-36 rounded-xl h-36 lg:h-56 mb-2 object-cover'/>

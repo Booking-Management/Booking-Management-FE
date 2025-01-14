@@ -26,24 +26,24 @@ export default function Banner() {
   };
 
   return (
-    <div className='w-full flex flex-col relative justify-center lg:w-9/12'>
-      <img src={logo} alt="Banner" className='w-full'/>
-      <div className='absolute ml-6 lg:ml-12 '>
-        <h1 className='text-white text-2xl w-4/12 font-bold lg:text-6xl lg:w-1/3'>Let's <h1 className='border-b-2 border-b-yellow-400 lg:border-b-4'>travel to</h1></h1>
-        <div className='h-8 lg:h-16 w-7/12 lg:w-3/4 overflow-hidden'>
+    <div className='w-full flex flex-col relative justify-center items-center lg:items-start lg:w-9/12'>
+      <img src={logo} alt="Banner" className='w-full h-80 lg:h-auto'/>
+      <div className='absolute w-11/12 lg:w-auto lg:ml-12 '>
+        <h1 className='text-white text-2xl w-5/12 font-bold lg:text-6xl lg:w-4/12'>Hãy <h1 className='border-b-2 border-b-yellow-400 lg:border-b-4 lg:pb-2'>du lịch đến</h1></h1>
+        <div className='h-8 lg:h-16 w-7/12 lg:w-3/4 overflow-hidden mt-2'>
           <div className="animate-scroll relative flex flex-col gap-11 lg:gap-4">
-            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>VietNam</h1>
-            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Ho Chi Minh City</h1>
-            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Ha Noi</h1>
-            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Da Nang</h1>
+            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Việt Nam</h1>
+            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Hồ Chí Minh</h1>
+            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Hà Nội</h1>
+            <h1 className='text-yellow-400 text-2xl font-bold lg:text-6xl'>Đà Nẵng</h1>
           </div>
           
         </div>
         
-        <p className='text-white text-xs w-9/12 lg:text-xl lg:my-8'>Enjoy the breathtaking view of the nature. Relax and cherish dreams to the fullest</p>
-        <div className='flex items-center mt-4 bg-white w-11/12 pr-2 rounded-lg lg:p-4 lg:gap-8'>
+        <p className='text-white text-xs my-4 w-8/12 lg:w-6/12 lg:text-xl lg:my-8'>Tận hưởng khung cảnh ngoạn mục của thiên nhiên. Hãy thư giãn và trân trọng những giấc mơ một cách trọn vẹn nhất</p>
+        <div className='flex items-center lg:mt-4 bg-white w-11/12 lg:w-6/12 pr-2 rounded-lg lg:p-4 lg:gap-8'>
           <FormControl fullWidth className="scale-75 lg:scale-100">
-            <InputLabel id="location-select-label">Location</InputLabel>
+            <InputLabel id="location-select-label">Khu vực</InputLabel>
             <Select
               labelId="location-select-label"
               id="location-select"
@@ -51,13 +51,13 @@ export default function Banner() {
               label="Location"
               onChange={handleLocationChange}
             >
-              <MenuItem value="Hanoi">Hanoi</MenuItem>
-              <MenuItem value="DaNang">Da Nang</MenuItem>
-              <MenuItem value="HoChiMinh">Ho Chi Minh</MenuItem>
+              <MenuItem value="Hanoi">Hà Nội</MenuItem>
+              <MenuItem value="DaNang">Đà Nẵng</MenuItem>
+              <MenuItem value="HoChiMinh">Hồ Chí Minh</MenuItem>
             </Select>
           </FormControl>
           <FormControl fullWidth className="scale-75 lg:scale-100">
-            <InputLabel id="date-select-label">Date</InputLabel>
+            <InputLabel id="date-select-label">Ngày giờ</InputLabel>
             <Select
               labelId="date-select-label"
               id="date-select"
@@ -72,7 +72,7 @@ export default function Banner() {
           </FormControl>
 
           <FormControl fullWidth className="scale-75 lg:scale-100">
-            <InputLabel id="price-select-label">Price</InputLabel>
+            <InputLabel id="price-select-label">Giá</InputLabel>
             <Select
               labelId="price-select-label"
               id="price-select"
@@ -80,7 +80,7 @@ export default function Banner() {
               label="Price"
               onChange={handlePriceChange}
             >
-              <MenuItem value={100}>$100</MenuItem>
+              <MenuItem value={100}>1 củ ~ 5 củ</MenuItem>
               <MenuItem value={200}>$200</MenuItem>
               <MenuItem value={300}>$300</MenuItem>
             </Select>

@@ -12,10 +12,9 @@ export default function Footer() {
             </h1>
             <p />
             <p className="mt-[18px] text-[15px] text-white/[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio
-              facere officiis enim animi placeat eaque nesciunt alias beatae id,
-              at dicta.
+            Trang web này là một nền tảng trực tuyến giúp người dùng dễ dàng tìm kiếm và đặt phòng khách sạn tại Việt Nam.
+            Trang web cung cấp thông tin chi tiết về các khách sạn, bao gồm đánh giá sao và giá cả, giúp người dùng có thể so sánh và lựa chọn phòng phù hợp với nhu cầu của mình.
+            Hãy tận hưởng những chuyến du lịch tuyệt vời và trân trọng những giấc mơ của bạn một cách trọn vẹn nhất!
             </p>
             <div className="mt-[18px] flex gap-4">
               <a className="hover:scale-110" target="_blank" href="#">
@@ -178,7 +177,7 @@ export default function Footer() {
                     className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
                     href="/"
                   >
-                    Home
+                    Trang chủ
                   </a>
                 </li>
                 <li className="mt-[15px]">
@@ -186,7 +185,7 @@ export default function Footer() {
                     className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
                     href="/our-tutors"
                   >
-                    News
+                    Tìm kiếm
                   </a>
                 </li>
                 <li className="mt-[15px]">
@@ -194,7 +193,7 @@ export default function Footer() {
                     className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
                     href="/become-a-tutor"
                   >
-                    Contact
+                    Giới thiệu
                   </a>
                 </li>
                 <li className="mt-[15px]">
@@ -202,23 +201,7 @@ export default function Footer() {
                     className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
                     href="/plans-and-pricing"
                   >
-                    Plans and pricing
-                  </a>
-                </li>
-                <li className="mt-[15px]">
-                  <a
-                    className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
-                    href="/terms-and-conditions"
-                  >
-                    Terms and conditions
-                  </a>
-                </li>
-                <li className="mt-[15px]">
-                  <a
-                    className="text-deutziawhite hover:text-deutziawhite/80  text-[15px] hover:font-semibold"
-                    href="/privacy-policy"
-                  >
-                    Privcay policy
+                    Thông tin
                   </a>
                 </li>
               </ul>
